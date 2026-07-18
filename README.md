@@ -4,6 +4,7 @@ An automated system for processing meeting audio, generating transcripts, and co
 
 ## Architecture
 
+```
 OpenClaw AI (localhost:18789)
     ↓
 MCP Servers (Tool Layer)
@@ -14,10 +15,11 @@ Data & Services
     ├── Audio Files Processing
     ├── Participant Database
     └── Email System
+```
 
 ## Features
 
-- **OpenClaw AI Integration** — Intelligent meeting assistant powered by OpenClaw LLM
+- **OpenClaw AI Integration** — Intelligent meeting assistant powered by OpenClaw
 - **Audio Transcription** — Automatically transcribe meeting audio files (MP3, WAV, M4A, OGG, FLAC) using OpenAI Whisper
 - **Email Communications** — Send automated follow-up emails to meeting participants via Gmail
 - **Participant Management** — Centralized participant contact information
@@ -25,6 +27,7 @@ Data & Services
 
 ## Project Structure
 
+```
 openclaw_uc1/
 ├── audio_mcp_server.py          # MCP server for audio transcription
 ├── email_mcp_server.py          # MCP server for email communications
@@ -34,6 +37,7 @@ openclaw_uc1/
 ├── audios/                     # Input audio files
 ├── audio_transcripts/          # Generated transcript files
 └── README.md
+```
 
 ## Quick Start
 
