@@ -1,11 +1,12 @@
 from mcp.server.fastmcp import FastMCP
 import os
 import whisper
+from pathlib import Path
 
 mcp = FastMCP("AudioServer")
 
 # ── Paths ─────────────────────────────────────
-BASE = r"C:\Users\DELL\Documents\openclaw_uc1"
+BASE = Path(__file__).resolve().parent
 
 AUDIO_DIR = os.path.join(BASE, "audios")
 TRANSCRIPT_DIR = os.path.join(BASE, "audio_transcripts")

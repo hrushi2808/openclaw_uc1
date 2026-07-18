@@ -1,3 +1,5 @@
+import os
+
 from mcp.server.fastmcp import FastMCP
 import smtplib
 from email.mime.text import MIMEText
@@ -8,8 +10,8 @@ mcp = FastMCP("EmailServer")
 @mcp.tool()
 def send_email(to: str, subject: str, body: str) -> str:
     """Send a follow-up email to a meeting participant"""
-    sender   = "hrushikesh2808@gmail.com"
-    password = "eljzipqkjvgzrpag"
+    sender   = os.getenv("EMAIL_ADDRESS")
+    password = os.getenv("EMAIL_APP_PASSWORD")
 
     try:
         msg = MIMEMultipart()

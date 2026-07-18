@@ -1,2 +1,8 @@
 .openclaw/
 .vscode/
+.env
+__pycache__/
+*.pyc
+*.egg-info/
+venv/
+.DS_Store
